@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Online - Fotos da Formatura</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rifa Online - Fotos Da Formatura</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Participe da Nossa Rifa!</h2>
+            <p>Estamos promovendo uma rifa para arrecadar fundos para Fotos Da Formatura. Ao comprar um bilhete, você está ajudando a nossa Formatura e ainda tem a chance de ganhar prêmios incríveis!</p>
+
+            <div class="prizes">
+                <h2>Prêmios:</h2>
+                <ul>
+                    <li><strong>1º Prêmio:</strong> Fone Bluetooth e um Relógio smartwatch</li>
+                    <li><strong>2º Prêmio:</strong> Serviços de manutenção de Computadores</li>
+                    <li><strong>3º Prêmio:</strong> Cesta de chocolate</li>
+                </ul>
+            </div>
+
+            <p>O sorteio acontecerá em [data e hora]. Os vencedores serão anunciados em [local de anúncio].</p>
+
+            <main>
+                <section id="raffle-info">
+                    <h2>Informações da Rifa</h2>
+                    <p>Preço por bilhete: R$ 5,00</p>
+                </section>
+
+                <section id="purchase">
+                    <h2>Comprar Bilhete</h2>
+                    <form id="purchase-form" action="send-email.php" method="POST">
+                        <label for="ticket-quantity">Quantidade de bilhetes:</label>
+                        <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" value="1" required>
+                    
+                        <button type="submit">Comprar Bilhetes</button>
+                    </form>
+                    
+                </section>
+
+                <section id="cart">
+                    <h2>Resumo da Compra</h2>
+                    <p>Bilhetes Comprados: <span id="ticket-count">0</span></p>
+                    <p>Total: R$ <span id="total-amount">0.00</span></p>
+                    <p>Entre em contato para escolher seu numero de Bilhetes e para fazer o pagamento:</p>
+                    <a href="https://w.app/1y0SX9" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://w.app/oIycON" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://w.app/G7IA5d" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Formatura. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
