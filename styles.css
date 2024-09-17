@@ -1,35 +1,109 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    background-color: #f0f0f0; /* Cinza claro */
+    color: #333; /* Cinza escuro para texto */
 }
 
-.google-button {
-    display: flex;
-    align-items: center;
-    background-color: #4285F4;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #034588; /* Azul marinho */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #000000; /* Preto */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
+    background-color: #ffffff; /* Branco para conteúdo */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.prizes {
+    margin: 20px 0;
+}
+
+.prizes h2 {
+    color: #003366; /* Azul marinho */
+}
+
+.prizes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prizes li {
+    background-color: #f9f9f9; /* Cinza muito claro */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd; /* Cinza claro para bordas */
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #003366; /* Azul marinho para bordas */
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #003366; /* Azul marinho */
     color: #ffffff;
     border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s;
 }
 
-.google-button:hover {
-    background-color: #357ae8;
+form button:hover {
+    background-color: #002244; /* Azul marinho mais escuro */
 }
 
-.google-button i {
-    margin-right: 10px;
-    font-size: 20px;
+#cart {
+    margin-top: 20px;
 }
-h1 {
-    color: #333;
-    font-size: 12px;
-    text-align: center;
-  }
+
+#cart a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 24px;
+    color: #003366; /* Azul marinho */
+    text-decoration: none;
+}
+
+#cart a:hover {
+    color: #001f3f; /* Azul marinho muito escuro */
+}
+
+#cart i {
+    vertical-align: middle;
+    margin-right: 8px;
+}
